@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\desarrollo\repositorio\TopChelaJS\platforms\android\libs\nativescript.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="57b3fa4e07f606555cab1d8373106c80acd79f64">
+        <dex dex="C:\desarrollo\repositorio\TopChelaJS\platforms\android\build\intermediates\pre-dexed\F0\debug\nativescript_92d0f47cd410b028ba988a088b6eb9f16b33ce88.jar" />
+    </item>
+    <item
+        jar="C:\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\desarrollo\repositorio\TopChelaJS\platforms\android\build\intermediates\pre-dexed\F0\debug\support-annotations-23.4.0_f6126d844204af6518b3b626ef25769c1f8a5482.jar" />
+    </item>
+
+</items>
