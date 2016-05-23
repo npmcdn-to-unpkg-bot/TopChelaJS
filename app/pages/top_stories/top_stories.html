@@ -1,0 +1,16 @@
+<ActionBar title="Top Stories">
+</ActionBar>
+
+<StackLayout>
+    <Label text="Tap the button" class="title"></Label>
+    <ListView [items]="topStories" row="1" [class.visible]="listLoaded">
+        <template let-item="item">
+            <GridLayout columns="*, auto">
+                <Image col="0" src="https://static01.nyt.com/images/2016/05/14/us/MASSSHOOT10/MASSSHOOT10-thumbLarge.jpg" stretch="none"></Image>
+                <StackLayout col="1">
+                    <Label [text]="item.title"></Label>
+                </StackLayout>
+            </GridLayout>
+        </template>
+    </ListView>
+</StackLayout>

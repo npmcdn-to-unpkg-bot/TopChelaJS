@@ -20,12 +20,12 @@
         "source": "C:\\desarrollo\\repositorio\\TopChelaJS\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
-        "merged": "C:\\desarrollo\\repositorio\\TopChelaJS\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
-        "source": "C:\\desarrollo\\repositorio\\TopChelaJS\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
-    },
-    {
         "merged": "C:\\desarrollo\\repositorio\\TopChelaJS\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
         "source": "C:\\desarrollo\\repositorio\\TopChelaJS\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\desarrollo\\repositorio\\TopChelaJS\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "C:\\desarrollo\\repositorio\\TopChelaJS\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
         "merged": "C:\\desarrollo\\repositorio\\TopChelaJS\\platforms\\android\\build\\intermediates\\res\\merged\\F0\\debug\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
