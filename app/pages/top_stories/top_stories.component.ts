@@ -1,5 +1,6 @@
 import {Component, ElementRef, OnInit, ViewChild} from "@angular/core";
 import {TextField} from "ui/text-field";
+import {Page} from "ui/page";
 import {TopStory} from "../../shared/services/domain_classes";
 import {TopStoryService} from "../../shared/services/topstory.service";
 
@@ -16,9 +17,11 @@ export class TopStoriesPage implements OnInit {
     isLoading = false;
     listLoaded = false;
 
-    constructor(private _topStoryService: TopStoryService){}
+    constructor(private _topStoryService: TopStoryService, private page: Page){}
 
     ngOnInit() {
+        console.log('Init')
+        // this.page.actionBarHidden = true;
         this.isLoading = true;
         this._topStoryService.getNews()
             .subscribe(loadedStories => {

@@ -3,3 +3,31 @@ ActionBar {
     background-color: yellow;
     color: black;
 }
+
+ListView {
+  opacity: 0;
+}
+
+.title {
+    color: black;
+    font-size: 15;
+    font-weight: bold;
+}
+
+.img_media {
+    width: 150;
+    height: 150;
+}
+
+.item_content {
+    padding: 5;
+}
+
+.visible {
+  animation-name: show;
+  animation-duration: 1s;
+}
+@keyframes show {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

@@ -19,12 +19,19 @@ var TopStoryService = (function () {
             .map(function (data) {
             var topStories = [];
             data.results.forEach(function (story) {
-                topStories.push(new domain_classes_1.TopStory(story.title, story.abstract, story.section, story.subsection, story.author));
+                var multimedia = [];
+                multimedia = story.multimedia.map(function (item) { return new domain_classes_1.Multimedia(item.url, item.format, item.height, item.width, item.type, item.subtype, item.caption, item.copyright); });
+                topStories.push(new domain_classes_1.TopStory(story.title, story.abstract, story.section, story.subsection, story.author, multimedia));
             });
             return topStories;
         })
             .catch(this.handleErrors);
     };
+    // async getNews () {
+    //    return new Promise<any>((resolve) => {
+    //        
+    //    });
+    // }
     TopStoryService.prototype.handleErrors = function (error) {
         console.log(JSON.stringify(error.json()));
         return Rx_1.Observable.throw(error);

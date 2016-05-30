@@ -2,15 +2,15 @@
 </ActionBar>
 
 <StackLayout>
-    <Label text="Tap the button" class="title"></Label>
-    <ListView [items]="topStories" row="1" [class.visible]="listLoaded">
+    <ListView [items]="topStories" [class.visible]="listLoaded">
         <template let-item="item">
-            <GridLayout columns="*, auto">
-                <Image col="0" src="https://static01.nyt.com/images/2016/05/14/us/MASSSHOOT10/MASSSHOOT10-thumbLarge.jpg" stretch="none"></Image>
-                <StackLayout col="1">
-                    <Label [text]="item.title"></Label>
+            <StackLayout orientation="horizontal" class="item_content">
+                <Image class="img_media" src="https://static01.nyt.com/images/2016/05/28/us/30REGIONSjp3/30REGIONSjp3-thumbLarge.jpg" stretch="none"></Image>
+                <StackLayout>
+                    <Label [text]="item.title" class="title" textWrap="true"></Label>
+                    <Label [text]="item.abstract" textWrap="true"></Label>
                 </StackLayout>
-            </GridLayout>
+            </StackLayout>
         </template>
     </ListView>
 </StackLayout>

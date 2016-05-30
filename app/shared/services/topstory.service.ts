@@ -1,6 +1,6 @@
 import {Injectable} from "@angular/core";
 import {Http, Headers, Response} from "@angular/http";
-import {TopStory} from "./domain_classes";
+import {TopStory, Multimedia} from "./domain_classes";
 import {Config} from "../config";
 import {Observable} from "rxjs/Rx";
 import "rxjs/add/operator/map";
@@ -20,12 +20,20 @@ export class TopStoryService {
         .map(data => {
             let topStories = [];
             data.results.forEach((story) => {
-                topStories.push(new TopStory(story.title, story.abstract, story.section, story.subsection, story.author));
+                let multimedia: Array<Multimedia> = [];
+                multimedia = story.multimedia.map((item) => new Multimedia(item.url, item.format, item.height, item.width, item.type, item.subtype, item.caption, item.copyright));
+                topStories.push(new TopStory(story.title, story.abstract, story.section, story.subsection, story.author, multimedia));
             })
             return topStories;
         })
         .catch(this.handleErrors);
     }
+    
+    // async getNews () {
+    //    return new Promise<any>((resolve) => {
+    //        
+    //    });
+    // }
 
     handleErrors(error: Response) {
         console.log(JSON.stringify(error.json()));
