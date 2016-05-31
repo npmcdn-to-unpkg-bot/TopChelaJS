@@ -19,8 +19,9 @@ var TopStoryService = (function () {
             .map(function (data) {
             var topStories = [];
             data.results.forEach(function (story) {
-                var multimedia = [];
-                multimedia = story.multimedia.map(function (item) { return new domain_classes_1.Multimedia(item.url, item.format, item.height, item.width, item.type, item.subtype, item.caption, item.copyright); });
+                var item = story.multimedia[1];
+                var multimedia = new domain_classes_1.Multimedia(item.url, item.format, item.height, item.width, item.type, item.subtype, item.caption, item.copyright);
+                console.log(JSON.stringify(multimedia));
                 topStories.push(new domain_classes_1.TopStory(story.title, story.abstract, story.section, story.subsection, story.author, multimedia));
             });
             return topStories;

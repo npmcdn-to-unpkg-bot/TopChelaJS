@@ -1,6 +1,6 @@
 ActionBar {
     padding-top: 10;
-    background-color: yellow;
+    background-color: #EFC825;
     color: black;
 }
 
@@ -12,6 +12,7 @@ ListView {
     color: black;
     font-size: 15;
     font-weight: bold;
+    text-align: left;
 }
 
 .img_media {

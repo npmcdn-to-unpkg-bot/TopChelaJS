@@ -3,5 +3,5 @@ export class Multimedia {
 }
 
 export class TopStory {
-    constructor(public title: String, public abstract: String, public section: String, public subsection: String, public author: String, public multimedia: Array<Multimedia>) {}
+    constructor(public title: String, public abstract: String, public section: String, public subsection: String, public author: String, public multimedia: Multimedia) {}
 }

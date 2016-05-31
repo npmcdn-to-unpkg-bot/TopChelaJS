@@ -20,8 +20,9 @@ export class TopStoryService {
         .map(data => {
             let topStories = [];
             data.results.forEach((story) => {
-                let multimedia: Array<Multimedia> = [];
-                multimedia = story.multimedia.map((item) => new Multimedia(item.url, item.format, item.height, item.width, item.type, item.subtype, item.caption, item.copyright));
+                let item = story.multimedia[1];
+                let multimedia: Multimedia = new Multimedia(item.url, item.format, item.height, item.width, item.type, item.subtype, item.caption, item.copyright);
+                console.log(JSON.stringify(multimedia))
                 topStories.push(new TopStory(story.title, story.abstract, story.section, story.subsection, story.author, multimedia));
             })
             return topStories;

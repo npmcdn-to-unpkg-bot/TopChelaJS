@@ -14,7 +14,7 @@ var TopStoriesPage = (function () {
     TopStoriesPage.prototype.ngOnInit = function () {
         var _this = this;
         console.log('Init');
-        this.page.actionBarHidden = true;
+        // this.page.actionBarHidden = true;
         this.isLoading = true;
         this._topStoryService.getNews()
             .subscribe(function (loadedStories) {

@@ -1,12 +1,12 @@
-<ActionBar title="Top Stories">
+<ActionBar title="Top Stories" android.icon="res://ic_t_logo" android.iconVisibility="always">
 </ActionBar>
 
 <StackLayout>
     <ListView [items]="topStories" [class.visible]="listLoaded">
         <template let-item="item">
             <StackLayout orientation="horizontal" class="item_content">
-                <Image class="img_media" src="https://static01.nyt.com/images/2016/05/28/us/30REGIONSjp3/30REGIONSjp3-thumbLarge.jpg" stretch="none"></Image>
-                <StackLayout>
+                <Image class="img_media" src="https://static01.nyt.com/images/2016/05/28/us/30REGIONSjp3/30REGIONSjp3-thumbLarge.jpg" stretch="aspectFill"></Image>
+                <StackLayout class="item_content">
                     <Label [text]="item.title" class="title" textWrap="true"></Label>
                     <Label [text]="item.abstract" textWrap="true"></Label>
                 </StackLayout>
