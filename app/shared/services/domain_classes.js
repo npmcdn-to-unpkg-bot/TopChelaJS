@@ -14,13 +14,12 @@ var Multimedia = (function () {
 }());
 exports.Multimedia = Multimedia;
 var TopStory = (function () {
-    function TopStory(title, abstract, section, subsection, author, multimedia) {
+    function TopStory(title, abstract, section, subsection, author) {
         this.title = title;
         this.abstract = abstract;
         this.section = section;
         this.subsection = subsection;
         this.author = author;
-        this.multimedia = multimedia;
     }
     return TopStory;
 }());
